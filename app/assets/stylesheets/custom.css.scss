@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* colors */
+$gray-medium-light: #eaeaea;
+
+header {
+  div {
+    h1 {
+      font-color: red;
+    }
+  }
+}
+
+/* because of the fixed header*/
+body {
+  padding-top: 70px;
+}
+
+footer {
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+}
