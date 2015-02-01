@@ -1,0 +1,16 @@
+<ul class="post">
+  <li>
+    <span class="post-title"><h3><%= link_to post.title, post_show_path(post) %></h3></span>
+    <span class="post-message"><%= post.message %></span></br>
+    </br>
+    <span>
+        <small>
+          <%= link_to "delete", post, method: :delete, data: {confirm: "You sure?"} %>
+        </small>
+        |
+        <small>
+          <%= link_to "edit", edit_post_path(post) %>
+        </small>
+    </span>
+  </li>
+</ul>

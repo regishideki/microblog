@@ -20,4 +20,14 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  activerecord:
+    attributes:
+      post:
+        slug_title: ""
+    errors:
+      models:
+        post:
+          attributes:
+            slug_title:
+              taken:
+                "Post could not be created because there is another post with same url. Please, try to use another Title."

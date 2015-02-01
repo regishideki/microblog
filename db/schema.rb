@@ -11,18 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150127223639) do
-
-  create_table "microposts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20150201181937) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "title"
-    t.text     "message"
+    t.string   "title",      null: false
+    t.text     "message",    null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "slug_title", null: false
   end
+
+  add_index "posts", ["slug_title"], name: "index_posts_on_slug_title", unique: true
 
 end
