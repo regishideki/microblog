@@ -19,6 +19,8 @@ gem 'turbolinks'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'devise'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'

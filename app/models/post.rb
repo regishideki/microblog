@@ -14,9 +14,12 @@ class Post < ActiveRecord::Base
   
   before_validation  :set_slug_title
   
-  def set_slug_title
-    self.title ||= ""
-    self.slug_title = self.title.parameterize
-  end
+  belongs_to :user
+  
+  private 
+    def set_slug_title
+      self.title ||= ""
+      self.slug_title = self.title.parameterize
+    end
   
 end
