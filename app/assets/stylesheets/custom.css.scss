@@ -13,6 +13,7 @@ $gray-medium-light: #eaeaea;
 }
 
 .logo {
+  float: left;
   text-decoration: none;
   color: white;
   &:hover {
@@ -22,6 +23,13 @@ $gray-medium-light: #eaeaea;
   &:click {
     text-decoration: none;
     color: white;
+  }
+}
+
+.header_menu {
+  li {
+    list-style: none;
+    float: right;
   }
 }
 
@@ -58,3 +66,4 @@ input, textarea, select, .uneditable-input {
     list-style: none;
   }
 }
+

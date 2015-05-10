@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   #get 'post/new'
   #get 'post/create'
   #get 'post/edit'
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
   
+  #test
+  #root 'users/sign_up'
+  #get 'microblog' => 'static_pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

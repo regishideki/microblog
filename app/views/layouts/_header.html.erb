@@ -1,5 +1,8 @@
 <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-      <h1><%= link_to "Microblog", root_url, class: "logo" %></h1>
+      <h1><%= link_to "Microblog", root_url, class: "logo" %>
+      <ul class="header_menu">
+        <li><%= link_to "Logout 1", "/users/sign_out", method: :delete %><li>
+      </ul>
     </div>
 </header>
